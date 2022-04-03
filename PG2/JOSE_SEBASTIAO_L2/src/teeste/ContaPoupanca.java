@@ -14,12 +14,9 @@ public class ContaPoupanca extends Conta {
         super(numero, saldo);
     }
     
-    double juros = 5.5;
-    
-    public void renderJuros (double saldo){
-    
-        this.debitar(saldo * juros);
-       
-    }
-
+     @Override
+        public boolean debitar(double valor) {
+            double rendimento = valor * 0.2;
+            return super.debitar(rendimento);
+        }
 }

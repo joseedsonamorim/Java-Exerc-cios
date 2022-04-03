@@ -18,19 +18,14 @@ public class Conta {
 		this.saldo = saldo;
 	}
 	
-        public void debitar(double valor) {
-            
-		if(valor > this.saldo ){
-                    
-                    System.out.println("Saque invaldio.");
-                    
-        }else {
-                    
-                    System.out.println("Saque Efetuado.");
-                    this.saldo = this.saldo -= valor;
-                    
-            }
-	}
+        public boolean debitar(double valor) {
+        if (this.saldo >= valor) {
+            this.saldo -= valor;
+            return true;
+        } else {
+            return false;
+        }
+    }
         
         public void creditar(double valor) {
 		saldo += valor;

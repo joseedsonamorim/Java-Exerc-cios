@@ -30,6 +30,15 @@ public static void main(String[] args) {
 	System.out.println("Saldo da Conta: após creditar " + ct2.getSaldo());
 	ct2.debitar(50);
 	System.out.println("Saldo da Conta: após debitar " + ct2.getSaldo());
+        
+        Conta ct3 = new ContaEspecial(8922, 2500);
+        System.out.println("DADOS DA CONTA");
+	System.out.println("Número da Conta: " + ct3.getNumero());
+	System.out.println("Saldo da Conta Antes de creditar: " + ct3.getSaldo());
+	ct3.creditar(100);
+	System.out.println("Saldo da Conta: após creditar " + ct3.getSaldo());
+	ct3.debitar(50);
+	System.out.println("Saldo da Conta: após debitar " + ct3.getSaldo());
 
     }   
 }
