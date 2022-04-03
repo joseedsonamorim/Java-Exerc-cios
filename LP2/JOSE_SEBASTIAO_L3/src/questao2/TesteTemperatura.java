@@ -11,7 +11,7 @@ package questao2;
 public class TesteTemperatura {
     
     public static void main(String[] args) {
-
+/*
         Temperatura t1 = new Temperatura();
         System.out.println(t1.toString());
         t1.setDelta(50.0F);
@@ -42,6 +42,7 @@ public class TesteTemperatura {
         System.out.println(t1.toString());              
         t1.setMin(101);
         System.out.println(t1.toString());  
+ */
     }
     
 }
